@@ -177,6 +177,7 @@ http://127.0.0.1:5500
 ### 🎥 Video Presentasi
 
 Link YouTube:
+https://youtu.be/HUpJS420O8E?si=Ji043G-fskmBXDTL
 
 ---
 
