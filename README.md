@@ -3,9 +3,9 @@ Sistem Informasi Rental Buku Digital Berbasis REST API dan Single Page Applicati
 
 ## 👤 Identitas Mahasiswa
 
-- Nama : Satria
-- NIM : XXXXXXXX
-- Kelas : TI.23.C1
+- Nama : Dira Rohmaeni
+- NIM : 312410465
+- Kelas : I241E
 - Mata Kuliah : Pemrograman Web 2
 
 ---
@@ -136,3 +136,50 @@ Masuk ke folder backend
 ```bash
 composer install
 php spark serve
+```
+
+
+Backend berjalan di:
+http://localhost:8080
+
+### Frontend
+
+Buka project frontend menggunakan Live Server.
+
+Contoh:
+http://127.0.0.1:5500
+
+---
+
+📸 Screenshot Aplikasi
+### Login
+
+(Tambahkan screenshot)
+
+### Dashboard
+
+(Tambahkan screenshot)
+
+### Data Buku
+
+(Tambahkan screenshot)
+
+### Data Anggota
+
+(Tambahkan screenshot)
+
+### Data Peminjaman
+
+(Tambahkan screenshot)
+
+---
+
+### 🎥 Video Presentasi
+
+Link YouTube:
+
+---
+
+### 📝 Kesimpulan
+
+Aplikasi E-Library berhasil dibuat menggunakan CodeIgniter 4 sebagai REST API dan Vue.js sebagai Single Page Application. Sistem dapat mengelola data buku, anggota, serta transaksi peminjaman buku dengan baik.
