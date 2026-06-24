@@ -1,0 +1,154 @@
+ERROR - 2026-06-24 04:58:24 --> Cannot add or update a child row: a foreign key constraint fails (`e-library`.`buku`, CONSTRAINT `fk_buku_kategori` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `buku` SET `judul` = :judul:, `penulis` = :penulis:, `penerbit` = :penerbit:, `tahun_terbit` = :tahun_terbit:, `kategori_id` = :kategori_id:, `stok` = :stok:, `cover` = :cover:
+WHERE `buku`.`id` IN :buku.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Api\Buku.php(113): CodeIgniter\Model->update('16', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Buku->update('16')
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Buku))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\project_UAS_buku\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-24 04:58:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e-library`.`buku`, CONSTRAINT `fk_buku_kategori` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON UPDATE CASCADE)
+[Method: PUT, Route: buku/16]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `buku` SET `judul` = :judul:, `penulis` = :penulis:, `penerbit` = :penerbit:, `tahun_terbit` = :tahun_terbit:, `kategori_id` = :kategori_id:, `stok` = :stok:, `cover` = :cover:
+WHERE `buku`.`id` IN :buku.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Api\Buku.php(113): CodeIgniter\Model->update('16', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Buku->update('16')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\project_UAS_buku\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-24 04:58:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e-library`.`buku`, CONSTRAINT `fk_buku_kategori` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `buku` SET `judul` = :judul:, `penulis` = :penulis:, `penerbit` = :penerbit:, `tahun_terbit` = :tahun_terbit:, `kategori_id` = :kategori_id:, `stok` = :stok:, `cover` = :cover:
+WHERE `buku`.`id` IN :buku.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Api\Buku.php(113): CodeIgniter\Model->update('16', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Buku->update('16')
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Buku))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\project_UAS_buku\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-24 04:58:24 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`e-library`.`buku`, CONSTRAINT `fk_buku_kategori` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `buku` SET `judul` = :judul:, `penulis` = :penulis:, `penerbit` = :penerbit:, `tahun_terbit` = :tahun_terbit:, `kategori_id` = :kategori_id:, `stok` = :stok:, `cover` = :cover:
+WHERE `buku`.`id` IN :buku.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Api\Buku.php(113): CodeIgniter\Model->update('16', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Buku->update('16')
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Buku))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\project_UAS_buku\\backend-api\\public\\index.php')
+ERROR - 2026-06-24 05:02:12 --> Cannot add or update a child row: a foreign key constraint fails (`e-library`.`buku`, CONSTRAINT `fk_buku_kategori` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `buku` SET `judul` = :judul:, `penulis` = :penulis:, `penerbit` = :penerbit:, `tahun_terbit` = :tahun_terbit:, `kategori_id` = :kategori_id:, `stok` = :stok:, `cover` = :cover:
+WHERE `buku`.`id` IN :buku.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Api\Buku.php(113): CodeIgniter\Model->update('16', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Buku->update('16')
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Buku))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\project_UAS_buku\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-24 05:02:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e-library`.`buku`, CONSTRAINT `fk_buku_kategori` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON UPDATE CASCADE)
+[Method: PUT, Route: buku/16]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `buku` SET `judul` = :judul:, `penulis` = :penulis:, `penerbit` = :penerbit:, `tahun_terbit` = :tahun_terbit:, `kategori_id` = :kategori_id:, `stok` = :stok:, `cover` = :cover:
+WHERE `buku`.`id` IN :buku.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Api\Buku.php(113): CodeIgniter\Model->update('16', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Buku->update('16')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\project_UAS_buku\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-24 05:02:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e-library`.`buku`, CONSTRAINT `fk_buku_kategori` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `buku` SET `judul` = :judul:, `penulis` = :penulis:, `penerbit` = :penerbit:, `tahun_terbit` = :tahun_terbit:, `kategori_id` = :kategori_id:, `stok` = :stok:, `cover` = :cover:
+WHERE `buku`.`id` IN :buku.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Api\Buku.php(113): CodeIgniter\Model->update('16', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Buku->update('16')
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Buku))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\project_UAS_buku\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-24 05:02:12 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`e-library`.`buku`, CONSTRAINT `fk_buku_kategori` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `buku` SET `judul` = NULL, `penulis` = NULL, `penerbit` = NULL, `tahun_terbit` = NULL, `kategori_id` = NULL, `stok` = NULL, `cover` = \'1782276672_15f01d54e890c442ca33.jpg\'
+WHERE `buku`.`id` IN (\'16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `buku` SET `judul` = :judul:, `penulis` = :penulis:, `penerbit` = :penerbit:, `tahun_terbit` = :tahun_terbit:, `kategori_id` = :kategori_id:, `stok` = :stok:, `cover` = :cover:
+WHERE `buku`.`id` IN :buku.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Api\Buku.php(113): CodeIgniter\Model->update('16', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Buku->update('16')
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Buku))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\project_UAS_buku\\backend-api\\public\\index.php')
