@@ -1,4 +1,4 @@
-# 📚 E-Library
+# 📚 E-Library 
 Sistem Informasi Rental Buku Digital Berbasis REST API dan Single Page Application (SPA).
 
 ## 👤 Identitas Mahasiswa
@@ -142,12 +142,15 @@ php spark serve
 Backend berjalan di:
 http://localhost:8080
 
-### Frontend
+## Menjalankan Frontend
 
-Buka project frontend menggunakan Live Server.
+1. Buka folder `frontend-spa` menggunakan Visual Studio Code.
+2. Install extension **Live Server** (jika belum ada).
+3. Klik kanan pada file `index.html`.
+4. Pilih **Open with Live Server**.
+5. Frontend akan berjalan pada browser, misalnya:
 
-Contoh:
-http://127.0.0.1:5500
+http://127.0.0.1:5500/frontend-spa/index.html#/
 
 ---
 
