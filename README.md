@@ -148,7 +148,7 @@ http://localhost:8080
 2. Install extension **Live Server** (jika belum ada).
 3. Klik kanan pada file `index.html`.
 4. Pilih **Open with Live Server**.
-5. Frontend akan berjalan pada browser, misalnya:
+5. Frontend akan berjalan pada browser, hasilnya:
 
 http://127.0.0.1:5500/frontend-spa/index.html#/
 
