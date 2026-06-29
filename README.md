@@ -154,26 +154,30 @@ http://127.0.0.1:5500/frontend-spa/index.html#/
 
 ---
 
-📸 Screenshot Aplikasi
+## 📸 Screenshot Aplikasi
+### Home
+
+![foto](https://github.com/dirarohmaeni/UAS_PEMROGRAM-WEB-2/blob/011512ab6bc7ddaad94e8c89a616c955a6eceed2/web_uas/home.png)
+
 ### Login
 
-(Tambahkan screenshot)
+![foto](https://github.com/dirarohmaeni/UAS_PEMROGRAM-WEB-2/blob/011512ab6bc7ddaad94e8c89a616c955a6eceed2/web_uas/login.png)
 
 ### Dashboard
 
-(Tambahkan screenshot)
+![foto](https://github.com/dirarohmaeni/UAS_PEMROGRAM-WEB-2/blob/011512ab6bc7ddaad94e8c89a616c955a6eceed2/web_uas/dashboard.png)
 
 ### Data Buku
 
-(Tambahkan screenshot)
+![foto](https://github.com/dirarohmaeni/UAS_PEMROGRAM-WEB-2/blob/011512ab6bc7ddaad94e8c89a616c955a6eceed2/web_uas/buku.png)
 
 ### Data Anggota
 
-(Tambahkan screenshot)
+![foto](https://github.com/dirarohmaeni/UAS_PEMROGRAM-WEB-2/blob/011512ab6bc7ddaad94e8c89a616c955a6eceed2/web_uas/anggota.png)
 
 ### Data Peminjaman
 
-(Tambahkan screenshot)
+![foto](https://github.com/dirarohmaeni/UAS_PEMROGRAM-WEB-2/blob/011512ab6bc7ddaad94e8c89a616c955a6eceed2/web_uas/peminjaman.png)
 
 ---
 
